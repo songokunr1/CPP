@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+    int dodawanie(int x,int y){
+    return x+y;
+    }
+
+    int wyswietl(int x, int y){
+    cout << "suma dwóch licz to: Re=" << x << " Im= "<< y<<endl;
+    }
+    
+    int odejmowanie(int x,int y){
+    return x-y;
+    }
+
+
+
+
+int main (){
+    struct  Liczba{
+    int reczywista;
+    int urojona;
+    };
+
+    Liczba pierwsza;
+    pierwsza.reczywista = 10;
+    pierwsza.urojona = 10;
+
+    Liczba druga;
+    druga.reczywista = 10;
+    druga.urojona = 10;
+
+    Liczba trzecia;
+    trzecia.reczywista = dodawanie(pierwsza.reczywista, druga.reczywista);
+    trzecia.urojona = dodawanie(pierwsza.urojona, druga.urojona);
+
+    wyswietl(trzecia.reczywista, trzecia.urojona);
+
+
+    return 0;
+
+}
